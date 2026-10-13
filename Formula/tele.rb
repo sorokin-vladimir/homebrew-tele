@@ -5,27 +5,27 @@
 class Tele < Formula
   desc "TUI Telegram client"
   homepage "https://github.com/sorokin-vladimir/tele"
-  version "1.11.12"
+  version "1.11.13"
   deprecate! date: "2026-06-19", because: "this tap is deprecated; migrate to sorokin-vladimir/tap"
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/sorokin-vladimir/tele/releases/download/v1.11.12/tele_darwin_amd64.tar.gz"
-      sha256 "17e90db7d13e8d959bda67d722c2359e9b6bc12b0309e70963016d76d288d9d1"
+      url "https://github.com/sorokin-vladimir/tele/releases/download/v1.11.13/tele_darwin_amd64.tar.gz"
+      sha256 "dc6e4ffcca5471ff62b552bb37b04f440a7a2cd8c3a7abe022e67f36f8b5e7e3"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/sorokin-vladimir/tele/releases/download/v1.11.12/tele_darwin_arm64.tar.gz"
-      sha256 "f24f7f9b478e3806289380c5ba8032c3a527a1e457b646aa94d21ddd8cfde50a"
+      url "https://github.com/sorokin-vladimir/tele/releases/download/v1.11.13/tele_darwin_arm64.tar.gz"
+      sha256 "c5cade2060b55abc7366e90cdb84362d54b6676cebb4488bd936bdae03142878"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sorokin-vladimir/tele/releases/download/v1.11.12/tele_linux_amd64.tar.gz"
-      sha256 "cd108928a75a011502ba5c88516e9414ffa8473209f83af36d4d8aac7ad222d3"
+      url "https://github.com/sorokin-vladimir/tele/releases/download/v1.11.13/tele_linux_amd64.tar.gz"
+      sha256 "e272d19bdf3465ca56bc10d46b649e06de7c8acf036f36ad7ea64db6d4312b65"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sorokin-vladimir/tele/releases/download/v1.11.12/tele_linux_arm64.tar.gz"
-      sha256 "607ad7ebc5722416983c311436a960dc3650b413e36bf88293e62a68569fa37b"
+      url "https://github.com/sorokin-vladimir/tele/releases/download/v1.11.13/tele_linux_arm64.tar.gz"
+      sha256 "64d40c7dc6df918cea37fbceb0dc931c6caa45de7a556d449dcdc1aa6cb71d09"
     end
   end
 
